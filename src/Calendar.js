@@ -26,6 +26,7 @@ function Calendar(element, options, eventSources) {
 	t.formatDates = function(format, date1, date2) { return formatDates(format, date1, date2, options) };
 	t.getDate = getDate;
 	t.getView = getView;
+	t.getHeader = getHeader;
 	t.option = option;
 	t.trigger = trigger;
 	
@@ -483,6 +484,10 @@ function Calendar(element, options, eventSources) {
 	
 	function getView() {
 		return currentView;
+	}
+
+	function getHeader() {
+		return header;
 	}
 	
 	
